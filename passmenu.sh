@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-password=$(dmenu -p "Enter PassWord: " -sb "#9B0BA5" -nb "#FFF" -nf "#000")
+password=$(dmenu -P -p "Enter Password: " -sb "#9B0BA5" -nb "#FFF" -nf "#000")
 
 if [ $(/usr/bin/whoami) = $password ]; then
 
