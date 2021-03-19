@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-password=$(dmenu -P -p "Enter Password: " -sb "#9B0BA5" -nb "#FFF" -nf "#000")
+password=$(rofi -dmenu -p "Enter Password: " -password)
 
 if [ $(/usr/bin/whoami) = $password ]; then
 
@@ -17,7 +17,7 @@ if [ $(/usr/bin/whoami) = $password ]; then
     password_files=( "${password_files[@]#"$prefix"/}" )
     password_files=( "${password_files[@]%.gpg}" )
 
-    password=$(printf '%s\n' "${password_files[@]}" | dmenu -i -sb "#9B0BA5" -nb "#FFF" -nf "#000" "$@")
+    password=$(printf '%s\n' "${password_files[@]}" | rofi -dmenu -i -p "Choose Password: " "$@")
 
     [[ -n $password ]] || exit
 
