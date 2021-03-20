@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env fish
 
 sleep 2
 xrandr --output eDP-1 --mode 1920x1080 --rate 144.00 --output DP-1-0 --primary --mode 1920x1080 --rate 60.00 --above eDP-1
