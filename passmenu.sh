@@ -28,3 +28,5 @@ if [ $(/usr/bin/whoami) = $password ]; then
 		    xdotool type --clearmodifiers --file -
     fi
 fi
+
+notify-send "Clipped $password password"
