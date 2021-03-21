@@ -3,7 +3,7 @@ import os
 import random
 wallpaper_list = []
 
-d = "/usr/share/wallpapers/garuda-wallpapers"
+d = "/usr/share/wallpapers"
 for path in os.listdir(d):
     full_path = os.path.join(d, path)
     if os.path.isfile(full_path):
