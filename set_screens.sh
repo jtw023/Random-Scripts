@@ -7,5 +7,3 @@ sleep 2
 vim -c wq ~/.config/picom/picom.conf
 sleep 2
 redshift -l 36.17497:-115.13722 -P -O 1900
-nitrogen --random --set-scaled --head=0
-nitrogen --random --set-scaled --head=1
