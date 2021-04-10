@@ -1,7 +1,9 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-#RANDOM=$$
-for i in `seq 157`
+RANDOM_NUMBERS=""
+for i in `seq 167`
 do
-    echo $RANDOM
+    RANDOM_NUMBERS+=$RANDOM
 done
+
+echo $RANDOM_NUMBERS
