@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-targetDir="/home/jordan/.config/colorscripts"
+targetDir="/home/$USER/.config/colorscripts"
 
 files=("$targetDir"/*)
 
