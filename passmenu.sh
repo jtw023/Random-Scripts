@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
+#
+# This is a script that fetches my passwords from 'pass - the
+# standard unix password manager'. It prompts for a master password
+# based on your output of $(whoami), lets you choose a password
+# to copy, and then prompts for your user gpg password. Assuming
+# successful gpg password, it will copy the password to your
+# clipboard for 45 seconds.
+#
+# Tools used: rofi and pass(which has its own dependencies).
 
 password=$(rofi -dmenu -p "Enter Password: " -password)
 
