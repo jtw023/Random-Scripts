@@ -7,7 +7,7 @@
 # 'alias cl="clear; bash *path/to/this/script* | lolcat"' for some
 # color at the top of my terminal everytime I clear it.
 #
-# Tools used: seq, expr, tput, echo, and cut.
+# Tools used: seq, expr, tput, echo, lolcat, and cut.
 
 RANDOM_NUMBERS=""
 
@@ -18,9 +18,9 @@ done
 
 if [[ "${#RANDOM_NUMBERS}" -gt $(expr $(tput cols) \* 5) ]]; then
 
-    echo "${RANDOM_NUMBERS}" | cut -c 1-$(expr $(tput cols) \* 5)
+    echo "${RANDOM_NUMBERS}" | cut -c 1-$(expr $(tput cols) \* 5) | lolcat
 
 else
-    echo "${RANDOM_NUMBERS}"
+    echo "${RANDOM_NUMBERS}" | lolcat
 fi
 
