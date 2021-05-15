@@ -14,7 +14,7 @@
 # before using the keybinding then it may throw an error. Simply install
 # the devour program or remove it from the config file.
 #
-# Tools used: rofi, and mpv.
+# Tools used: rofi, devour, and mpv.
 
 MUSIC_LIST=("Lyrical Playlist" "Instrumental Playlist")
 
@@ -22,10 +22,10 @@ CHOICE=$(printf '%s\n' "${MUSIC_LIST[@]}" | rofi -dmenu -i -p "Choose a playlist
 
 if [[ $CHOICE = "Lyrical Playlist" ]]; then
 
-    mpv --no-resume-playback --shuffle /home/$USER/Music/lyrical\ music/
+    devour mpv --no-resume-playback --shuffle /home/$USER/Music/lyrical\ music/
 
 elif [[ $CHOICE = "Instrumental Playlist" ]]; then
 
-    mpv --no-resume-playback --shuffle /home/$USER/Music/instrumental\ music/
+    devour mpv --no-resume-playback --shuffle /home/$USER/Music/instrumental\ music/
 
 fi
