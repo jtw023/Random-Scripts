@@ -8,12 +8,6 @@
 # that music directory. Then it also closes the terminal while
 # mpv is playing.
 #
-# Heads up: In my config file I have this keybound to the program
-# 'devour'. This script itself does not need it but if you use it in
-# conjunction with my config file and do not remove that devour command
-# before using the keybinding then it may throw an error. Simply install
-# the devour program or remove it from the config file.
-#
 # Tools used: rofi, devour, and mpv.
 
 MUSIC_LIST=("Lyrical Playlist" "Instrumental Playlist")
