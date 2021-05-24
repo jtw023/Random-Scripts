@@ -8,7 +8,7 @@
 #
 # Tools used: rofi.
 
-BROWSER_LIST=("LibreWolf(Default)" "Brave(Video and USG)" "Qutebrowser(Youtube)")
+BROWSER_LIST=("LibreWolf(Default)" "Brave(Video Chat, Coursera, and USG)" "Qutebrowser(Youtube)")
 
 CHOICE=$(printf '%s\n' "${BROWSER_LIST[@]}" | rofi -dmenu -i -p "Which Browser?")
 
@@ -16,7 +16,7 @@ if [[ $CHOICE = "LibreWolf(Default)" ]]; then
 
     librewolf
 
-elif [[ $CHOICE = "Brave(Video and USG)" ]]; then
+elif [[ $CHOICE = "Brave(Video Chat, Coursera, and USG)" ]]; then
 
     brave
 
