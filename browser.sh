@@ -12,15 +12,15 @@ BROWSER_LIST=("LibreWolf(Default)" "Brave(Video Chat, Coursera, and USG)" "Quteb
 
 CHOICE=$(printf '%s\n' "${BROWSER_LIST[@]}" | rofi -dmenu -i -p "Which Browser?")
 
-if [[ $CHOICE = "LibreWolf(Default)" ]]; then
+if [[ $CHOICE = "${BROWSER_LIST[0]}" ]]; then
 
     librewolf
 
-elif [[ $CHOICE = "Brave(Video Chat, Coursera, and USG)" ]]; then
+elif [[ $CHOICE = "${BROWSER_LIST[1]}" ]]; then
 
     brave
 
-elif [[ $CHOICE = "Qutebrowser(Youtube)" ]]; then
+elif [[ $CHOICE = "${BROWSER_LIST[2]}" ]]; then
 
     qutebrowser
 

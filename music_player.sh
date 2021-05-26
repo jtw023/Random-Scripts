@@ -14,11 +14,11 @@ MUSIC_LIST=("Lyrical Playlist" "Instrumental Playlist")
 
 CHOICE=$(printf '%s\n' "${MUSIC_LIST[@]}" | rofi -dmenu -i -p "Choose a playlist: ")
 
-if [[ $CHOICE = "Lyrical Playlist" ]]; then
+if [[ $CHOICE = "${MUSIC_LIST[0]}" ]]; then
 
     devour mpv --no-resume-playback --shuffle /home/$USER/Music/lyrical\ music/
 
-elif [[ $CHOICE = "Instrumental Playlist" ]]; then
+elif [[ $CHOICE = "${MUSIC_LIST[1]}" ]]; then
 
     devour mpv --no-resume-playback --shuffle /home/$USER/Music/instrumental\ music/
 
