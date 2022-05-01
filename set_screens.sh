@@ -7,4 +7,4 @@
 #
 # Tools used: xrandr.
 
-xrandr --output "DP-1-0" --primary --mode 1920x1080 --rate 60.00 --output "eDP-1" --mode 1920x1080 --rate 144.00 --right-of "DP-1-0" --output "DP-1-2" --mode 1600x900 --rate 59.95 --left-of "DP-1-0"
+xrandr --output "DP-2" --primary --mode 2560x1440 --rate 59.96 --output "DP-1" --mode 2560x1440 --rotate left --rate 59.95 --right-of "DP-2" --output "eDP-1" --mode 3072x1920 --rate 60.00 --left-of "DP-2" &
