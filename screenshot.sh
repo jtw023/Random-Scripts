@@ -11,4 +11,3 @@
 # Tools used: flameshot and notify-send.
 
 flameshot gui -p /home/$USER/Pictures
-notify-send "Screenshot Saved"
