@@ -6,7 +6,7 @@ if [ $time != '00' ]; then
 
 	sleep $(expr 60 - $time)
 	while true; do
-		xsetroot -name "$(date +'%a %b %I:%M %p') \
+		xsetroot -name "$(date +'%a %b %d %I:%M %p') \
 | Battery: $(acpi | awk '{print $4}' | sed s/,// | head -n 1) \
 | Updates: $(checkupdates | wc -l)  "
 		sleep 30
@@ -15,7 +15,7 @@ if [ $time != '00' ]; then
 else
 
 	while true; do
-		xsetroot -name "$(date +'%a %b %I:%M %p') \
+		xsetroot -name "$(date +'%a %b %d %I:%M %p') \
 | Battery: $(acpi | awk '{print $4}' | sed s/,// | head -n 1) \
 | Updates: $(checkupdates | wc -l)  "
 		sleep 30
