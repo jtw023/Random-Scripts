@@ -18,7 +18,7 @@ done
 
 if [[ "${#RANDOM_NUMBERS}" -gt $(expr $(tput cols) \* 5) ]]; then
 
-    echo "${RANDOM_NUMBERS}" | cut -c 1-$(expr $(tput cols) \* 5) | lolcat
+    echo "${RANDOM_NUMBERS}" | cut -c 1-$(expr $(tput cols) \* 2) | lolcat
 
 else
     echo "${RANDOM_NUMBERS}" | lolcat
