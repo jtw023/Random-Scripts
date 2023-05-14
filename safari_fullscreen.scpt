@@ -1,3 +1,7 @@
+-- Applescript to launch browser and terminal side by side
+-- when using markdown preview.
+-- This script is called in $HOME/.config/nvim/lua/config/plug-markdown.lua
+
 on run argv
     tell application "Safari"
         open location item 1 of argv
