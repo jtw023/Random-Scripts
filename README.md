@@ -1,16 +1,26 @@
-# This is a collection of random scripts.
+## :warning: Understand what these commands will do before running them.
 
-## Installation 
+### Installation
 
-From your users home directory:
+
+<details>
+	<summary>Linux</summary>
+
+As a normal user open a terminal and run commands:
+
+Git Clone Repo to Home Directory:
 ~~~
-git clone https://github.com/jtw023/Random-Scripts.git
+git clone https://github.com/jtw023/Random-Scripts.git ~$USER/github_repos/Random-Scripts
 ~~~
+</details>
 
-Then as a normal user run command:
+<details>
+	<summary>MacOS</summary>
+
+As a normal user open a terminal and run commands:
+
+Git Clone Repo to Home Directory:
 ~~~
-sudo cp -v ~$USER/Random-Scripts/set_screens.sh /usr/local/bin/set_screens.sh
+git clone https://github.com/jtw023/Random-Scripts.git $HOME/github_repos/Random-Scripts
 ~~~
-
-As always, please make sure you understand what these commands will do before you run them on your system.
-
+</details>
