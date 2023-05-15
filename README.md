@@ -8,7 +8,7 @@
 
 As a normal user open a terminal and run commands:
 
-Git Clone Repo to Home Directory:
+Git Clone Repo to Github Repos Directory:
 ~~~
 git clone https://github.com/jtw023/Random-Scripts.git ~$USER/github_repos/Random-Scripts
 ~~~
@@ -19,7 +19,7 @@ git clone https://github.com/jtw023/Random-Scripts.git ~$USER/github_repos/Rando
 
 As a normal user open a terminal and run commands:
 
-Git Clone Repo to Home Directory:
+Git Clone Repo to Github Repos Directory:
 ~~~
 git clone https://github.com/jtw023/Random-Scripts.git $HOME/github_repos/Random-Scripts
 ~~~
