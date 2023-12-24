@@ -47,25 +47,24 @@ def draw_grid():
     print(output, end='')
 
 if __name__ == '__main__':
-    if TODAY.strftime("%m") == '12':
-        while SNOW < HEIGHT:
-            row = []
+    while SNOW < HEIGHT:
+        row = []
 
 
-            for _ in range(WIDTH):
-                if random() < SNOW_DENSITY / 100:
-                    row.append(choice(SNOWFLAKES))
-                else:
-                    row.append(' ')
+        for _ in range(WIDTH):
+            if random() < SNOW_DENSITY / 100:
+                row.append(choice(SNOWFLAKES))
+            else:
+                row.append(' ')
 
-            GRID.insert(0, row)
-            GRID.pop()
+        GRID.insert(0, row)
+        GRID.pop()
 
-            system('clear')
+        system('clear')
 
-            draw_grid()
+        draw_grid()
 
-            sleep(DELAY)
-            SNOW += 1
+        sleep(DELAY)
+        SNOW += 1
 
-            system('clear')
+        system('clear')
