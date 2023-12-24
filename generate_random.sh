@@ -18,9 +18,11 @@ done
 
 if [[ "${#RANDOM_NUMBERS}" -gt $(expr $(tput cols) \* 5) ]]; then
 
+    clear
     echo "${RANDOM_NUMBERS}" | cut -c 1-$(expr $(tput cols) \* 2) | lolcat
 
 else
+    clear
     echo "${RANDOM_NUMBERS}" | lolcat
 fi
 
