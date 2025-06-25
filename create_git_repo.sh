@@ -37,7 +37,7 @@ if [[ $CHOICE1 == "Create Inside Existing Directory" ]]; then
             touch README.md
             echo "Repository Initialized" >> README.md
             git add .
-            git commit -m "Initial Commit"
+            git commit -m "Batman"
             gh repo create "$1" --public --source=. --remote=upstream --push
             echo -e "\e[32m✓ \e[0m Repo created, exiting."
             exit 0
@@ -55,7 +55,7 @@ if [[ $CHOICE1 == "Create Inside Existing Directory" ]]; then
             touch README.md
             echo "Repository Initialized" >> README.md
             git add .
-            git commit -m "Initial Commit"
+            git commit -m "Batman"
             gh repo create "$1" --public --source=. --remote=upstream --push
             echo -e "\e[32m✓ \e[0m Repo created, exiting."
             exit 0
@@ -84,7 +84,7 @@ elif [[ $CHOICE1 == "Create Inside New Directory" ]]; then
             touch README.md
             echo "Repository Initialized" >> README.md
             git add .
-            git commit -m "Initial Commit"
+            git commit -m "Batman"
             gh repo create "$1" --public --source=. --remote=upstream --push
             echo -e "\e[32m✓ \e[0m Repo created, exiting."
             exit 0
@@ -104,7 +104,7 @@ elif [[ $CHOICE1 == "Create Inside New Directory" ]]; then
             touch README.md
             echo "Repository Initialized" >> README.md
             git add .
-            git commit -m "Initial Commit"
+            git commit -m "Batman"
             gh repo create "$1" --public --source=. --remote=upstream --push
             echo -e "\e[32m✓ \e[0m Repo created, exiting."
             exit 0
